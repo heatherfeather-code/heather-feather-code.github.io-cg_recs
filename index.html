@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG Rec's</title>
+    <script src="petProject.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <h1>CG Rec's</h1>
+    </div>
+    <div >
+        <div class="justify-center">
+            <h2>Welcome to Cozy Game Recommendations</h2>
+        </div>
+        <div class="instructions justify-center">
+            <p>Instructions: Select one or more filters from each category below. Click submit to get your game recommendations!</p>
+        </div>
+    </div>
+
+    <!-- THEME Filter -->
+    <form id="filter-form">
+        <div class="filter-container">
+            <div class="filter-header">
+                <h3>Theme</h3>
+            </div>
+
+            <div class="contain-filters" id="theme-filter">
+                <button id="small_town_btn" class="filter">Small Town</button>
+                <button id="open_world_btn" class="filter"> Open World</button>
+                <button id="island_btn" class="filter">Island</button>
+                <button id="adventurer_btn" class="filter">Adventurer</button>
+                <button id="magic_btn" class="filter">Magic</button>
+                <button id="medieval_fantasy_btn"class="filter">Medieval Fantasy</button>
+                <button id="alchemist_btn" class="filter"> Alchemist</button>
+                <button id="calm_btn"class="filter">Calm</button>
+            
+            </div>
+        </div>
+        <!-- GAME PLAY filter -->
+        <div class="filter-container">
+            <div class="filter-header">
+                <h3>Game play</h3>
+            </div>  
+
+            <div class="contain-filters" id="gamePlay-filter">
+                <div class="justify-content">
+                    <button id="adventure_btn" class="filter">Adventure</button>
+                    <button id= "building_btn"class="filter">Building</button>
+                    <button id="farming_btn" class="filter">Farming</button>
+                    <button id="collecting_btn" class="filter">Collecting</button>
+                    <button id = "life_sim_btn"class="filter">Life Simulator</button>
+                    <button id="puzzle_btn" class="filter">Puzzles</button>
+                    <button id= "roleplay_btn"class="filter">Role Play Game</button>
+                    <button id="co-op_btn" class="filter">Co-op Play</button>
+                </div>    
+            </div>
+        </div>
+        <!-- COMBAT STYLE filter -->
+        <div class="filter-container">
+            <div class="filter-header">
+                <h3>Combat Style</h3>
+            </div>
+            
+            <div class="contain-filters" id="combat-filter">
+                <div class="justify-content">
+                   <button id="no_combat_btn" class="filter">No Combat</button>
+                   <button id="minimal_btn" class="filter">Minimal</button>
+                   <button id="card_based_btn" class="filter">Card Based</button>
+                   <button id="turn_based_btn" class="filter">Turn Based</button>
+                   <button id= "moderate_btn" class="filter">Moderate</button>
+                   <button id="challenging_btn" class="filter">Challenging</button>
+                </div>
+            </div>
+        </div>
+       
+    </form>
+     <!-- Submit button -->
+     <div id="filter_selection">
+        <button id="apply_selection_btn" class="submit-btn">Apply Selection</button>
+    </div>
+   <!-- Section for Results of the selections! -->
+    <div id="results-grid">
+        <div id="game_card_stardew_valley" class="game_card">
+            <h3>Stardew Valley</h3>
+            <img src="img/stardew-valley.jpg" alt="cover art for stardew valley">
+            <p>Description: Stardew Valley is an indie title, that focuses on the player taking over their grandfather's farm outside of the city. The player can farm, raise animals, make connections with the local npc's, as well as combat monsters in the mines. </p>
+        </div>
+        <div id="game_card_animal_crossing" class="game_card">
+            <h3>Animal Crossing: New Horizons</h3>
+            <img src="img/animal-crossing.jpg" alt="cover image for animal crossing: new horizons">
+            <p>Description: Nintendo's 6th title within the Animal Crossing Franchise. Move to a deserted Island, and build a life for yourself. Decorate the island, make friends with the villagers, complete your 'critterpedia', and donate items to the museum and more!</p>
+        </div>
+        <div id="game_card_moonstone_island" class="game_card">
+            <h3>Moonstone Island</h3>
+            <img src="img/moonstone-island.jpg" alt="cover art for moonstone island">
+            <p>Description: As a young alchemist you need to complete a year of training away from home. Explore the random generated island, collect spirits and build relationships with the npc's.</p>
+        </div>
+        <div id="game_card_mytime_at_portia" class="game_card">
+            <h3>My Time at Portia</h3>
+            <img src="img/my-time-at-portia.jpg" alt="cover art for my time at portia">
+            <p>Description: Set in a world where civilization has been destroyed, humans have emerged from underground and began to rebuild. As a desendent of a famous builder, you inherit your fathers workshop. Engage with the npcs, craft and explore the state of Portia!</p>
+        </div>
+        <div id="game_card_short_hike" class="game_card">
+            <h3>A Short Hike</h3>
+            <img src="img/short-hike.jpg" alt="cover art for a short hike">
+            <p>Description: As the name suggests you are going on a hike! Climb and soar through the peaceful mountainside landscapes of Hawk Peak Provincal Park. Explore the world and meet with other hikers all the while discovering hidden treasures.  </p>
+        </div>
+        <div id="game_card_fire_emblem"class="game_card">
+            <h3>Fire Emblem: Three Houses</h3>
+            <img src="img/fire-emblem-three-houses.jpg" alt="cover art for Fire Emblem: Three houses">
+            <p> Description: Set on the continent of Fódlan, the territory is divded by three ruling powers. The nations are connected through the Garreg Mach Monastery. Select a house to play with and explore the monastery, improve your skills, and build relationships with the npcs.</p>
+        </div>
+
+        <div id="game_card_zelda_botw" class="game_card">
+            <h3>Zelda: Breath of the Wild</h3>
+            <img src="img/zelda-botw.jpg" alt="cover art for Zelda Breath of the Wild">
+            <p>Description:
+                Set at the end of the Zelda timeline for the franchise, you play as Link who has amnesia from previous events. Save princess Zelda and prevent Calamity Ganon from destroying Hyrule. The game offers an open world to explore at your own pace. You can take on enemies or even just wander around to collect new items and cook!  
+            </p>
+        </div>
+        <div id="game_card_dreamlight_valley" class="game_card">
+            <h3>Disney Dreamlight Valley</h3>
+            <img src="img/dreamlight-valley.jpg" alt="Disney Dreamlight Valley cover art">
+            <p>Description: Return to the valley and help your favourite Disney characters tackle the forgetting. Explore, make new friendships, fish, collect items, and decorate!</p>
+        </div>
+
+        <div id="game_card_bear_and_breakfast" class="game_card">
+            <h3>Bear and Breakfast</h3>
+            <img src="img/bear-and-breakfast.jpg" alt="cover art for bear and breakfast">
+            <p>Description: Play as Hank, a bear who takes it upon himself to explore being an entrepreneur of running a bed and breakfast for humans. Unlock different areas of the map, decorate the rooms you've build in various building and expand the bed and breakfast business you've created.</p>
+        </div>
+
+        <div id="game_card_fields_of_mistria" class="game_card">
+            <h3>Fields of Mistria</h3>
+            <img src="img/fields-of-mistria.jpg" alt="fields of mistria cover art">
+            <p> Description: Assist the town of Mistria in repairing following an earthquake. You are offered a homestead in exchange for help with fixing the town. Meet the towns people, explore mistria and engage with magic. </p>
+        </div>
+
+        <div id="game_card_a_little_to_the_left" class="game_card">
+            <h3>A Little to the Left</h3>
+            <img src="img/a-little-to-the-left.jpg" alt="title art for A little to the left">
+            <p>Description: Enter the cozy world of A Little to the Left. Organize household items while avoiding a mischevious cat. Enjoy the satsifying stacking and sorting of this game. </p>
+        </div>
+
+        <div id="game_card_unpacking" class="game_card">
+            <h3>Unpacking</h3>
+            <img src="img/unpacking.jpg" alt="cover art for unpacking">
+            <p>Description: Follow a young woman as she grows up from a young girl to adulthood. Unpack her belongings and learn about her life. If you enjoy organizing and a calm environment you will enjoy this simple game. </p>
+        </div>
+
+
+
+
+
+    </div>
+    <footer id="footer">Copyright. CG Rec's 2024.</footer>
+
+
+
+</body>
+</html>
